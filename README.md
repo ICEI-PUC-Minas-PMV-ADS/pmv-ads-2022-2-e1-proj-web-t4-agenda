@@ -1,23 +1,23 @@
-# TÍTULO DO PROJETO
+# Agenda Empresarial
 
-`CURSO`
+`Desenvolvimento e Analise de Sistemas`
 
-`DISCIPLINA`
+`Projeto: Desenvolvimento de Aplicação Web Front-End`
 
-`SEMESTRE`
+`Eixo 1`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+Desenvolvimento de uma agenda online onde as informações e interações podem ser feitas com todos usuários de um determinado setor em uma determinada empresa, buscando  mais organização e diminuir o tempo de desenvolvimento de suas tarefas.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Christian Andrés paiva paiva
+* Jeferson Felix dos Santos
+* Mateus Corcino Husbert
+* Matheus Delay da Silva
 
 ## Orientador
 
-* Nome completo do professor 1
+* Sandra Maria Silveira
 
 ## Instruções de utilização
 
