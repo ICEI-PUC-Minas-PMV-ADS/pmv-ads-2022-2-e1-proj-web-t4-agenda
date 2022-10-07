@@ -2,15 +2,15 @@
 
 <span style="color:red">Pré-requisitos: <a href="3-Projeto de Interface.md"> Projeto de Interface</a></span>
 
-Definição de como o software é estruturado em termos dos componentes que fazem parte da solução e do ambiente de hospedagem da aplicação.
+Nesta etapa será definido os detalhes da solução encontrada pela equipe referente ao ambiente de hospedagem.
 
 ## Diagrama de componentes
 
-Diagrama que permite a modelagem física de um sistema, através da visão dos seus componentes e relacionamentos entre os mesmos.
+Através do diagrama a seguir é possível visualizar seus componentes e relacionamentos entre os mesmos.
 
 Exemplo: 
 
-Os componentes que fazem parte da solução são apresentados na Figura XX.
+Os componentes que fazem parte da solução são apresentados na Figura 01.
 
 ![Diagrama de Componentes](img/componentes.png)
 <center>Figura XX - Arquitetura da Solução</center>
