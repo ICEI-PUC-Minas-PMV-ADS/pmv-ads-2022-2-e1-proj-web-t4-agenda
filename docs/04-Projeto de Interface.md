@@ -18,7 +18,7 @@ Página inicial:
 
 ![páginainicial](img/paginainicial.png)
 
-A página principal será o centro do nosso projeto, nele será exibido sua agenda separado por dia e horário mantendo suas atividades separadas, também será possível selecionar a data que deseja ter visualizar em um calendário cituado na parte central esquerda, além de ter acesso as outras abas como de pesquisa, criação de atividades e perfil.
+A página principal será o centro do nosso projeto, nele será exibido sua agenda separado por dia e horário mantendo suas atividades separadas, também será possível selecionar a data que deseja visualizar em um calendário cituado na parte central esquerda, além de ter acesso as outras abas como de pesquisa, criação de atividades e perfil.
 
 Criar nova tarefa:
 
