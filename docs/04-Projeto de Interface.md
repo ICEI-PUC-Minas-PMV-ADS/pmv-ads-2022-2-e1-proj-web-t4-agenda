@@ -28,3 +28,7 @@ Página inicial:
 Criar nova tarefa:
 
 ![novatarefa](img/novatarefa.png)
+
+Tela de usúario:
+
+![teladeusuario](img/usuario.png)
