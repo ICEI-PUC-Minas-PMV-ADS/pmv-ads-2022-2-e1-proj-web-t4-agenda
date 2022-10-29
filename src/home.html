@@ -1,0 +1,97 @@
+<html>
+<head>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Agenda</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/jquery-3.6.1.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+</head>
+<body>
+<table>
+    <tr style="border-bottom: black; border-width: 3px">
+        <td style="display: inline-flex">
+            <img src="images/calendar-days-solid.png" width="30" height="30" style="margin-top: -45px; margin-left: 50px">
+            <caption>Outubro 2022</caption>
+        </td>
+    </tr>
+    <tr>
+        <td style="width: 35%">
+            <div class="container-criar-tarefa">
+                <a type="button" class="criar-tarefa" href="tarefa.html">
+                    Criar tarefa
+                </a>
+            </div>
+            <label for="date_agenda"></label><input type="datetime-local" id="date_agenda">
+        </td>
+        <td style="width: 65%">
+            <table id="calendar">
+                <tr class="weekdays" style="grid-column: 1 / -1; display: grid; grid-template-columns: repeat(8, 1fr); width: 100%;">
+                    <td></td>
+                    <th scope="col">Domingo</th>
+                    <th scope="col">Segunda</th>
+                    <th scope="col">Terça</th>
+                    <th scope="col">Quarta</th>
+                    <th scope="col">Quinta</th>
+                    <th scope="col">Sexta</th>
+                    <th scope="col">Sabado</th>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+</body>
+<script src="js/agenda.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        genLine();
+        $('#date_agenda').showPicker();
+    });
+    function genLine(){
+        let tbody = document.getElementById('calendar');
+        let content = ''
+        for(let x = 0; x < 24; x++){
+            if(x === 0){
+                content += '<tr class="days" style="grid-column: 1 / -1; display: grid; grid-template-columns: repeat(8, 1fr); width: 100%;"><td style="border: none; text-align: center">0'+ x +':00</td>'+
+                        '<td class="day" style="padding: 5px; box-sizing:border-box; border: 1px solid #ccc;">' +
+                        '       <div class="event">\n' +
+                    '                <div class="event-desc">\n' +
+                    '                  Group Project meetup\n' +
+                    '                </div>\n' +
+                    '                <div class="event-time">\n' +
+                    '                  6:00pm to 8:30pm\n' +
+                    '                </div>\n' +
+                    '              </div></td>'+
+                        '<td class="day" style="padding: 5px; box-sizing:border-box; border: 1px solid #ccc;"></td>'+
+                        '<td class="day" style="padding: 5px; box-sizing:border-box; border: 1px solid #ccc;"></td>'+
+                        '<td class="day" style="padding: 5px; box-sizing:border-box; border: 1px solid #ccc;"></td>'+
+                        '<td class="day" style="padding: 5px; box-sizing:border-box; border: 1px solid #ccc;"></td>'+
+                        '<td class="day" style="padding: 5px; box-sizing:border-box; border: 1px solid #ccc;"></td>'+
+                        '<td class="day" style="padding: 5px; box-sizing:border-box; border: 1px solid #ccc;"></td>'
+            } else{
+                if(x >= 10){
+                    content += '<tr style="grid-column: 1 / -1; display: grid; grid-template-columns: repeat(8, 1fr); width: 100%;"><td style="border: none; text-align: center">'+ x +':00</td>'+
+                            '<td class="day" style="padding: 5px; box-sizing:border-box; border: 1px solid #ccc;"></td>'+
+                            '<td class="day" style="padding: 5px; box-sizing:border-box; border: 1px solid #ccc;"></td>'+
+                            '<td class="day" style="padding: 5px; box-sizing:border-box; border: 1px solid #ccc;"></td>'+
+                            '<td class="day" style="padding: 5px; box-sizing:border-box; border: 1px solid #ccc;"></td>'+
+                            '<td class="day" style="padding: 5px; box-sizing:border-box; border: 1px solid #ccc;"></td>'+
+                            '<td class="day" style="padding: 5px; box-sizing:border-box; border: 1px solid #ccc;"></td>'+
+                            '<td class="day" style="padding: 5px; box-sizing:border-box; border: 1px solid #ccc;"></td>'
+                } else{
+                    content += '<tr style="grid-column: 1 / -1; display: grid; grid-template-columns: repeat(8, 1fr); width: 100%;"><td style="border: none; text-align: center">0'+ x +':00</td>'+
+                            '<td class="day" style="padding: 5px; box-sizing:border-box; border: 1px solid #ccc;"></td>'+
+                            '<td class="day" style="padding: 5px; box-sizing:border-box; border: 1px solid #ccc;"></td>'+
+                            '<td class="day" style="padding: 5px; box-sizing:border-box; border: 1px solid #ccc;"></td>'+
+                            '<td class="day" style="padding: 5px; box-sizing:border-box; border: 1px solid #ccc;"></td>'+
+                            '<td class="day" style="padding: 5px; box-sizing:border-box; border: 1px solid #ccc;"></td>'+
+                            '<td class="day" style="padding: 5px; box-sizing:border-box; border: 1px solid #ccc;"></td>'+
+                            '<td class="day" style="padding: 5px; box-sizing:border-box; border: 1px solid #ccc;"></td>'
+                }
+            }
+        }
+        tbody.innerHTML += content;
+    }
+</script>
+</html>
