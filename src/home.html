@@ -1,97 +1,109 @@
+<!DOCTYPE html>
 <html>
-<head>
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <title>Agenda</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="js/jquery-3.6.1.min.js"></script>
+    <head>
+        <meta charset="utf-8">
+        <title>AGENDA</title>
 
-    <link rel="stylesheet" type="text/css" href="css/home.css">
-</head>
-<body>
-<table>
-    <tr style="border-bottom: black; border-width: 3px">
-        <td style="display: inline-flex">
-            <img src="images/calendar-days-solid.png" width="30" height="30" style="margin-top: -45px; margin-left: 50px">
-            <caption>Outubro 2022</caption>
-        </td>
-    </tr>
-    <tr>
-        <td style="width: 35%">
-            <div class="container-criar-tarefa">
-                <a type="button" class="criar-tarefa" href="tarefa.html">
-                    Criar tarefa
-                </a>
-            </div>
-            <label for="date_agenda"></label><input type="datetime-local" id="date_agenda">
-        </td>
-        <td style="width: 65%">
-            <table id="calendar">
-                <tr class="weekdays" style="grid-column: 1 / -1; display: grid; grid-template-columns: repeat(8, 1fr); width: 100%;">
-                    <td></td>
-                    <th scope="col">Domingo</th>
-                    <th scope="col">Segunda</th>
-                    <th scope="col">Terça</th>
-                    <th scope="col">Quarta</th>
-                    <th scope="col">Quinta</th>
-                    <th scope="col">Sexta</th>
-                    <th scope="col">Sabado</th>
-                </tr>
-            </table>
-        </td>
-    </tr>
-</table>
-</body>
-<script src="js/agenda.js"></script>
-<script type="text/javascript">
-    $(document).ready(function() {
-        genLine();
-        $('#date_agenda').showPicker();
-    });
-    function genLine(){
-        let tbody = document.getElementById('calendar');
-        let content = ''
-        for(let x = 0; x < 24; x++){
-            if(x === 0){
-                content += '<tr class="days" style="grid-column: 1 / -1; display: grid; grid-template-columns: repeat(8, 1fr); width: 100%;"><td style="border: none; text-align: center">0'+ x +':00</td>'+
-                        '<td class="day" style="padding: 5px; box-sizing:border-box; border: 1px solid #ccc;">' +
-                        '       <div class="event">\n' +
-                    '                <div class="event-desc">\n' +
-                    '                  Group Project meetup\n' +
-                    '                </div>\n' +
-                    '                <div class="event-time">\n' +
-                    '                  6:00pm to 8:30pm\n' +
-                    '                </div>\n' +
-                    '              </div></td>'+
-                        '<td class="day" style="padding: 5px; box-sizing:border-box; border: 1px solid #ccc;"></td>'+
-                        '<td class="day" style="padding: 5px; box-sizing:border-box; border: 1px solid #ccc;"></td>'+
-                        '<td class="day" style="padding: 5px; box-sizing:border-box; border: 1px solid #ccc;"></td>'+
-                        '<td class="day" style="padding: 5px; box-sizing:border-box; border: 1px solid #ccc;"></td>'+
-                        '<td class="day" style="padding: 5px; box-sizing:border-box; border: 1px solid #ccc;"></td>'+
-                        '<td class="day" style="padding: 5px; box-sizing:border-box; border: 1px solid #ccc;"></td>'
-            } else{
-                if(x >= 10){
-                    content += '<tr style="grid-column: 1 / -1; display: grid; grid-template-columns: repeat(8, 1fr); width: 100%;"><td style="border: none; text-align: center">'+ x +':00</td>'+
-                            '<td class="day" style="padding: 5px; box-sizing:border-box; border: 1px solid #ccc;"></td>'+
-                            '<td class="day" style="padding: 5px; box-sizing:border-box; border: 1px solid #ccc;"></td>'+
-                            '<td class="day" style="padding: 5px; box-sizing:border-box; border: 1px solid #ccc;"></td>'+
-                            '<td class="day" style="padding: 5px; box-sizing:border-box; border: 1px solid #ccc;"></td>'+
-                            '<td class="day" style="padding: 5px; box-sizing:border-box; border: 1px solid #ccc;"></td>'+
-                            '<td class="day" style="padding: 5px; box-sizing:border-box; border: 1px solid #ccc;"></td>'+
-                            '<td class="day" style="padding: 5px; box-sizing:border-box; border: 1px solid #ccc;"></td>'
-                } else{
-                    content += '<tr style="grid-column: 1 / -1; display: grid; grid-template-columns: repeat(8, 1fr); width: 100%;"><td style="border: none; text-align: center">0'+ x +':00</td>'+
-                            '<td class="day" style="padding: 5px; box-sizing:border-box; border: 1px solid #ccc;"></td>'+
-                            '<td class="day" style="padding: 5px; box-sizing:border-box; border: 1px solid #ccc;"></td>'+
-                            '<td class="day" style="padding: 5px; box-sizing:border-box; border: 1px solid #ccc;"></td>'+
-                            '<td class="day" style="padding: 5px; box-sizing:border-box; border: 1px solid #ccc;"></td>'+
-                            '<td class="day" style="padding: 5px; box-sizing:border-box; border: 1px solid #ccc;"></td>'+
-                            '<td class="day" style="padding: 5px; box-sizing:border-box; border: 1px solid #ccc;"></td>'+
-                            '<td class="day" style="padding: 5px; box-sizing:border-box; border: 1px solid #ccc;"></td>'
-                }
+        <link href="css/smoothness/jquery-ui-1.10.3.custom.min.css" rel="stylesheet">
+        <link href="css/fullcalendar.css" rel="stylesheet">
+        <link href="css/fullcalendar.print.css" rel="stylesheet">
+        
+	<style>
+            body {
+                    margin-top: 40px;
+                    text-align: center;
+                    font-size: 12px;
+                    font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
             }
-        }
-        tbody.innerHTML += content;
-    }
-</script>
+
+            #calendar {
+                    margin: 0 auto;
+                    width: 100%;
+            }
+	</style>
+    </head>
+    <body>
+        
+        <div id='calendar'></div>
+        
+        <script src="js/jquery-3.6.1.min.js"></script>
+        <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+        <script src="js/fullcalendar.js"></script>
+        
+        <script>
+            $(document).ready(function() {
+                
+		var date = new Date();
+		var d = date.getDate();
+		var m = date.getMonth();
+		var y = date.getFullYear();
+                
+                var calendar = $('#calendar').fullCalendar({
+                    
+                    // configurações
+                    theme: true,        
+                    editable: true,	 
+                    selectable: true,
+                    selectHelper: true,
+                    
+                    // cabeçalhos
+                    header: {
+                            left: 'prev,next today',
+                            center: 'title',
+                            right: 'month,agendaWeek,agendaDay'
+                    },
+
+                    // agendar           
+                    select: function(start, end, allDay) {
+                        var title = prompt('Event Title:');
+                        if (title) {
+                            calendar.fullCalendar('renderEvent', {
+                                    title: title,
+                                    start: start,
+                                    end: end,
+                                    allDay: allDay
+                                },
+                                true // make the event "stick"
+                            );
+                        }
+                        calendar.fullCalendar('unselect');
+                    },	
+
+                    // tradução
+                    monthNames: ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'],
+                    monthNamesShort: ['Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez'],
+                    dayNames: ['Domingo','Segunda','Terça','Quarta','Quinta','Sexta','Sábado'],
+                    dayNamesShort: ['Dom','Seg','Ter','Qua','Qui','Sex','Sáb'],
+                    buttonText: {
+                        prev: '&nbsp;&#9668;&nbsp;',
+                        next: '&nbsp;&#9658;&nbsp;',
+                        prevYear: '&nbsp;&lt;&lt;&nbsp;',
+                        nextYear: '&nbsp;&gt;&gt;&nbsp;',
+                        today: 'Hoje',
+                        month: 'Mês',
+                        week: 'Semana',
+                        day: 'Dia'
+                    },		
+                    titleFormat: {
+                        month: 'MMMM yyyy',
+                        week: "d [ yyyy]{ '&#8212;'[ MMM] d MMM yyyy}",
+                        day: 'dddd, d MMM, yyyy'
+                    },
+                    columnFormat: {
+                        month: 'ddd',
+                        week: 'ddd d/M',
+                        day: 'dddd d/M'
+                    },
+                    allDayText: 'Dia todo',
+                    axisFormat: 'H:mm',
+                    timeFormat: {
+                        '': 'H(:mm)',
+                        agenda: 'H:mm{ - H:mm}'
+                    }
+                    
+                });
+            });
+        </script>
+        
+    </body>
 </html>
