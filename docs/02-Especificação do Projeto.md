@@ -25,7 +25,7 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |Jhonatan Rodrigues  |Uma tela de Login que me encaminhe até a página principal do site (RF-04)|Obter segurança e organização para o acesso do site|
 |Jhonatan Rodrigues  |Ter um menu onde eu possa retornar a tela de Login (RF-06 e 10)|Facilidade e organização dentro do site|
 |Jhonatan Rodrigues  |Poder editar ou excluir uma atividade já criada em minha agenda (RF-05)|Para alterar informações durante o desenvolvimento de alguma atividade da equipe|
-|Beatriz Castilho    |Poder adicionar comentários às minhas atividades e salvá-las como preferida (RF-07, 08 e 09)|Para poder adicionar alguma anotação durante o desenvolvimento da atividade|
+|Beatriz Castilho    |Poder filtrar a minha agenda por mês semana ou dia (RF-07, 08 e 09)|Para ter um melhor modo de visualizar minhas atividades|
 
 ## Requisitos
 
@@ -41,9 +41,9 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-04| O site deve ter uma tela de login que encaminhe o usuário até a tela principal | MÉDIA  |
 |RF-05| O site deve permitir que o usuário possa editar e excluir uma atividade já criada na agenda | MÉDIA |
 |RF-06| O site deve ter um menu de usuário | MÉDIA |
-|RF-07| O site deve permitir que o usuário adicione um comentário quando for finalizar uma determinada atividade | BAIXA |
-|RF-08| O site deve permitir salvar tarefas como preferidas | BAIXA |
-|RF-09| O site deve permitir verificar as tarefas salvas como preferidas | BAIXA |
+|RF-07| O site deve permitir que o usuário visualize a agenda filtrada por mês | BAIXA |
+|RF-08| O site deve permitir que o usuário visualize a agenda filtrada por semana | BAIXA |
+|RF-09| O site deve permitir que o usuário visualize a agenda filtrada por dia | BAIXA |
 |RF-10| O site deve permitir que o usuário possa retornar até a tela de login | BAIXA |
 |RF-11| O site deve permitir separar as atividades por horário | BAIXA |
 
