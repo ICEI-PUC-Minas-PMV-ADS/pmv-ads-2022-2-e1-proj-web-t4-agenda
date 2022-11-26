@@ -22,8 +22,8 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |Beatriz Castilho    |Ter uma agenda pessoal com minhas atividades e desenvolver uma rotina (RF-01 e 02)| Ter mais disciplina e disposição durante meu dia |
 |Beatriz Castilho    |Visualizar minhas atividades passadas e meu tempo gasto durante a semana (RF-03)|Me organizar melhor para minhas próximas atividades e aproveitar melhor meu tempo|
 |Jhonatan Rodrigues  |Um software que me auxilie a ver as atividades da minha equipe (RF-01 e 02)|Melhorar o aproveitamento de tempo e o rendimento da minha equipe|
-|Jhonatan Rodrigues  |Alterar o status das minhas atividades entre finalizado e pendente (RF-04)|Evitar conflito de informação e diminuir o tempo gasto nas atividades|
-|Jhonatan Rodrigues  |Poder dividir as atividades da minha equipe por níveis de prioridade (RF-06 e 10)|Para que minha equipe dê prioridade a atividades mais importantes|
+|Jhonatan Rodrigues  |Uma tela de Login que me encaminhe até a página principal do site (RF-04)|Obter segurança e organização para o acesso do site|
+|Jhonatan Rodrigues  |Ter um menu onde eu possa retornar a tela de Login (RF-06 e 10)|Facilidade e organização dentro do site|
 |Jhonatan Rodrigues  |Poder editar ou excluir uma atividade já criada em minha agenda (RF-05)|Para alterar informações durante o desenvolvimento de alguma atividade da equipe|
 |Beatriz Castilho    |Poder adicionar comentários às minhas atividades e salvá-las como preferida (RF-07, 08 e 09)|Para poder adicionar alguma anotação durante o desenvolvimento da atividade|
 
@@ -38,13 +38,13 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-01| O site deve apresentar na página principal uma agenda padrão, com dia, mês e ano | ALTA  | 
 |RF-02| O site deve permitir que seu usuário possa criar e gerenciar atividades em um determinado horário na agenda | ALTA  |
 |RF-03| O site deve permitir ao usuário visualizar suas atividades passadas em sua agenda | MÉDIA |
-|RF-04| O site deve oferecer um menu adicional que permita ao usuário mudar o status de sua tarefa entre finalizado e pendente | ALTA  |
+|RF-04| O site deve ter uma tela de login que encaminhe o usuário até a tela principal | MÉDIA  |
 |RF-05| O site deve permitir que o usuário possa editar e excluir uma atividade já criada na agenda | MÉDIA |
-|RF-06| O site deve permitir que o usuário defina a prioridade de uma atividade como alta, média e baixa | MÉDIA |
+|RF-06| O site deve ter um menu de usuário | MÉDIA |
 |RF-07| O site deve permitir que o usuário adicione um comentário quando for finalizar uma determinada atividade | BAIXA |
 |RF-08| O site deve permitir salvar tarefas como preferidas | BAIXA |
 |RF-09| O site deve permitir verificar as tarefas salvas como preferidas | BAIXA |
-|RF-10| O site deve permitir que o usuário possa alterar a prioridade de uma atividade já criada | BAIXA |
+|RF-10| O site deve permitir que o usuário possa retornar até a tela de login | BAIXA |
 |RF-11| O site deve permitir separar as atividades por horário | BAIXA |
 
 
