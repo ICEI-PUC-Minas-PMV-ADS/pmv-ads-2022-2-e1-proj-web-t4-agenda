@@ -10,14 +10,19 @@ Abaixo temos a tela de Login que será a primeira impressão do cliente referent
 ### Página Principal (Mês)
 Após a etapa de Login o usuário será direcionado para a página principal, onde é possível visualizar suas atividades separadas por Mês.
 
-![image](https://user-images.githubusercontent.com/113395332/204091313-feaced59-78e5-4330-b2a3-2f5c18e22fee.png)
+![image](https://user-images.githubusercontent.com/113395332/204095367-45956c73-c251-4747-89f1-9a056283d318.png)
 
 ### Página Principal (Semana)
 Clicando na Opção de Semana na parte superior direta da tela principal será possível mudar a visualização para semanas
 
-![image](https://user-images.githubusercontent.com/113395332/204091445-fe2e3222-15dc-4942-baf5-de99c74c5486.png)
+![image](https://user-images.githubusercontent.com/113395332/204095453-16ed62a2-842c-4a42-be7a-7ce7fd720fd4.png)
 
 ### Página Principal (Dia)
 Já na aba de Dia, é possível visualizar suas tarefas separadas somente em um dia em específico
 
-![image](https://user-images.githubusercontent.com/113395332/204091571-72a859a9-1c50-4a5c-846d-f885e78e9628.png)
+![image](https://user-images.githubusercontent.com/113395332/204095525-1dddf4c1-50ee-4f33-acbc-6da76946eb58.png)
+
+### Menu Usuário
+Foi adicionado também um menu de usuário, no canto superior esquedo da tela, tendo as opções de acesso ao seu perfil, atidades e sair onde o usuário será encaminhado até a tela de login novamente.
+
+![image](https://user-images.githubusercontent.com/113395332/204095587-0f67495d-b929-470c-8ce8-481febdfb4f5.png)
