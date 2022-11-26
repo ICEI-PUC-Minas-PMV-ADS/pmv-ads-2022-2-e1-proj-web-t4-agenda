@@ -10,7 +10,6 @@ Desenvolvimento de uma agenda online onde as informações e interações podem 
 
 ## Integrantes
 
-* Christian Andrés paiva paiva
 * Jeferson Felix dos Santos
 * Mateus Corcino Husbert
 * Matheus Delay da Silva
