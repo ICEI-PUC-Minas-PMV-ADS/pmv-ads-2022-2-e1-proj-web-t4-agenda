@@ -38,7 +38,7 @@ A equipe está organizada da seguinte maneira:
 > - Scrum Master: Jeferson Felix
 > - Product Owner: Matheus Delay
 > - Equipe de Desenvolvimento: Matheus Husbert
-> - Equipe de Design: Cristian Paiva
+> - Equipe de Design: Matheus Delay
 
 ### Processo
 
