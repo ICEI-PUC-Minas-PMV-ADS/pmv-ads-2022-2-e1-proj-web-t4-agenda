@@ -2,8 +2,6 @@
 
 [Vídeo de apresentação](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t4-agenda/blob/main/presentation/agenda-apresentacao.mp4)
 
-# Material de Apoio sobre a Apresentação de um Produto
-
 ## Título do Projeto
 
 O nome "Agenda" foi pensado com base na ideia principal da aplicação: ser uma agenda online para organização. 
