@@ -1,0 +1,24 @@
+cff-version: 1.0.1
+message: Sistema de agenda online para empresas
+title: Agenda Empresarial
+authors:
+  - family-names: Corcino Husbert
+    given-names: Mateus 
+  - family-names: Felix dos Santos
+    given-names: Jeferson 
+  - family-names: Delay da Silva
+    given-names: Matheus
+  - name-suffix: Professora
+    affiliation: PUC Minas
+    family-names: Maria Silveira
+    given-names: Sandra
+keywords:
+  - agenda online para empresas
+  - agendamento de compromissos empresariais
+  - sistema de gestão de agenda corporativa
+  - agenda empresarial digital
+  - agenda de trabalho online
+repository-code: https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t4-agenda
+license: CC-BY-4.0
+version: 1.0.0
+date-released: 2022-11-15
